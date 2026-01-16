@@ -7,7 +7,7 @@ global $wgDBname, $wgServer;
 if ( MW_ENTRY_POINT !== 'cli' ) {
 	if (
 		isset( $wgServer ) &&
-		substr( $wgServer, -12 ) !== 'miraheze.org'
+		substr( $wgServer, -10 ) !== 'wikivy.com'
 	) {
     	require_once __DIR__ . '/UnknownWiki.php';
     	exit;
@@ -15,7 +15,7 @@ if ( MW_ENTRY_POINT !== 'cli' ) {
 		require_once __DIR__ . '/getTranslations.php';
 
 		$escapedRequestWikiUrl = htmlspecialchars(
-			'https://meta.miraheze.org/wiki/Special:RequestWiki?wpsubdomain=' . substr($wgDBname, 0, -4)
+			'https://meta.wikivy.com/wiki/Special:RequestWiki?wpsubdomain=' . substr($wgDBname, 0, -4)
 		);
 
 		$getLanguageCode = 'getLanguageCode';
