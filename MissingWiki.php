@@ -45,7 +45,7 @@ if ( MW_ENTRY_POINT !== 'cli' ) {
 					<!-- Jumbotron -->
 					<div class="jumbotron">
 						<p style="text-align: center; animation: fadein 1s;">
-							<img src="/ErrorPages/assets/wikivy-logo.png" alt="Wikivy" />
+							<img src="/ErrorPages/assets/wikivy-logo.png" alt="Wikivy" height="50" />
 						</p>
 						<h1><b>{$getParsedTranslation( 'missingwiki' )}</b></h1>
 						<p class="lead">{$getParsedTranslation( 'wiki-not-found' )}</p>
